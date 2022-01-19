@@ -1,0 +1,12 @@
+@import "reset";
+
+header {
+    align-items: center;
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100%;
+}
