@@ -6,22 +6,31 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title JS World
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous")
     body 
         header
             .logo 
-                img(src="img/logo.jpg", alt="Joystick logo") 
+                img(src="img/joystickLogo.png", alt="Joystick logo") 
             .headerContent 
-                h1 JS World 
+                h1 JS World
                 nav
                     ul
                         li
-                            a(href="#") Games
+                            a(href="#games") 
+                                span.text Games
+                                span.icons.fas.fa-gamepad
                         li
-                            a(href="#") Utilities
+                            a(href="#utilities") 
+                                span.text Utilities
+                                span.icons.fas.fa-tools
                         li
-                            a(href="#") About
+                            a(href="#") 
+                                span.text About
+                                span.icons.fas.fa-question
                         li
-                            a(href="#") Contact
+                            a(href="#") 
+                                span.text Contact
+                                span.icons.fas.fa-headset
         main 
             block content 
         footer 
