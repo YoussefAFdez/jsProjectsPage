@@ -85,6 +85,7 @@ nav  {
 
 main {
     background-color: lightblue;
+    height: 100%;
 }
 
 .gallery {
@@ -120,6 +121,20 @@ main {
     display: inline-block;
     margin: 1em 0;
     padding: 0.5em 2em;
+}
+
+.formulario {
+
+    margin: 0 auto;
+    width: 50%;
+
+    form {
+        align-items: center;
+        display: grid;
+        gap: 1em;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
+    }
 }
 
 /*
@@ -202,5 +217,14 @@ main {
 
     .description {
         width: 100%;
+    }
+
+    main {
+        position: relative;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 }

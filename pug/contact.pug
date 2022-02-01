@@ -1,0 +1,13 @@
+extends base.pug
+
+block content 
+    .formulario
+        form(action="", method="post") 
+            label(for="tbNombre") Nombre:
+            input(type="text", name="tbNombre")
+            label(for="tbMail") Correo electrónico:
+            input(type="email", name="tbMail")
+            label(for="tbAsunto") Asunto:
+            input(type="text", name="tbAsunto")
+            label(for="taMensaje") Mensaje:
+            textarea(name="taMensaje", cols="30", rows="10") 

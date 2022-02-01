@@ -148,6 +148,7 @@ nav a {
 
 main {
   background-color: lightblue;
+  height: 100%;
 }
 
 .gallery {
@@ -186,6 +187,55 @@ main {
   display: inline-block;
   margin: 1em 0;
   padding: 0.5em 2em;
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 50%;
+}
+.formulario form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-rows: auto auto auto auto;
+  -ms-grid-columns: auto 1em auto;
+  grid-template-columns: auto auto;
+}
+.formulario form > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.formulario form > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.formulario form > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.formulario form > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.formulario form > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.formulario form > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.formulario form > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.formulario form > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
 }
 
 /*
@@ -275,5 +325,14 @@ main {
 
   .description {
     width: 100%;
+  }
+
+  main {
+    position: relative;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
   }
 }
