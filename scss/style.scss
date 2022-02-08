@@ -126,15 +126,20 @@ main {
 .formulario {
 
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
 
     form {
         align-items: center;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 1em;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto auto;
     }
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*
@@ -159,6 +164,15 @@ main {
 
     .description {
         width: 50%;
+    }
+
+    .formulario form {
+        width: 70%;
+    }
+
+    .formItem {
+        flex-direction: row;
+        width: 100%;
     }
 }
 
